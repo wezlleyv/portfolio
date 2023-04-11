@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
-    <link rel="stylesheet" type="text/css" href="">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/projects.css')}}">
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
    <title>Portfolio</title>
 </head>
@@ -24,7 +24,7 @@
     </header>
 
     <main>
-        <section style="background-image: url('');" id="default">
+        <section style="background-image: url('{{ url_for('static', filename='images/wave.svg') }}');" id="default">
             <article>
                 <div id="content">
                     <span>Olá, eu sou o</span>
@@ -43,10 +43,10 @@
 
         <aside>
             <ul id="reference" style="list-style: none;">
-                <a href="https://github.com/wezlleyv"><li style=" background-image: url('images/github.png')" class="icon"></li></a>
-                <a href="https://github.com/wezlleyv"><li style=" background-image: url('images/linkedin.png')" class="icon"></li></a>
-                <a href="https://github.com/wezlleyv"><li style=" background-image: url('images/instagram.png')" class="icon"></li></a>
-                <a href="https://github.com/wezlleyv"><li style=" background-image: url('images/gmail-logo.png')" class="icon"></li></a>
+                <a href="https://github.com/wezlleyv"><li style=" background-image: url('{{ url_for('static', filename='images/github.png') }}')" class="icon"></li></a>
+                <a href="https://github.com/wezlleyv"><li style=" background-image: url('{{ url_for('static',filename='images/linkedin.png') }}')" class="icon"></li></a>
+                <a href="https://github.com/wezlleyv"><li style=" background-image: url('{{ url_for('static', filename='images/instagram.png') }}')" class="icon"></li></a>
+                <a href="https://github.com/wezlleyv"><li style=" background-image: url('{{ url_for('static', filename='images/gmail-logo.png') }}')" class="icon"></li></a>
             </ul>
             <div id="bar"></div>
         </aside>
