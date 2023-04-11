@@ -1,0 +1,21 @@
+.projects {
+    width: 70%;
+    margin: 0px auto;
+    padding: auto;
+}
+
+.projects ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    animation-name: upper;
+    animation-duration: 1s;
+}
+
+.projects div {
+    width: 250px;
+    height: 200px;
+    background-color: black;
+    margin: 1rem;
+    border-radius: 10px;
+}

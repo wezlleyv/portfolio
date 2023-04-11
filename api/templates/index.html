@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static/css', filename='main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static/css', filename='projects.css') }}">
+    <script src="{{ url_for('static/js', filename='main.js') }}"></script>
+   <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div class="header-group">
+            <span>Weslley</span>
+        </div>
+
+        <nav id="menu" class="header-group"></div>
+            <ul>
+                <a><li onclick="ChangeToProjects()" id="page">Projetos</li></a>
+                <a><li>Sobre mim</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section style="background-image: url('{{ url_for('static/css', filename='wave.svg')}}');" id="default">
+            <article>
+                <div id="content">
+                    <span>Olá, eu sou o</span>
+                    <h1 style="font-size: 2rem;">Weslley Victor.</h1>
+                    <h2 style="margin-left: 3rem;scale: 1; opacity: 0.7; margin-bottom: 1rem;"><span style="color: #5000ca ;">&lt;</span>Back-end Developer<span style="color: #5000ca ;">&frasl;&gt;</span></h2>
+                    <span style="text-align: justify; font-size: .9rem; margin-top: 1rem;">Apaixonado por tecnologia desde pequeno&#128525; me encontrei no back-end por gostar de está por trás de toda criação. Quer <a style="font-size: 0.9rem; text-decoration: none; color: #5000ca; border-bottom: 1px solid #5000ca;" href="about-me">saber mais</a>?</span>
+                    <button onclick="ChangeToProjects()" id="btn-projetos">Projetos</button>
+                </div>
+            </article>
+            
+            <article>
+                <div id="picture"></div>
+            </article>
+            
+        </section>
+
+        <aside>
+            <ul id="reference" style="list-style: none;">
+                <a href="https://github.com/wezlleyv"><li style=" background-image: url('images/github.png')" class="icon"></li></a>
+                <a href="https://github.com/wezlleyv"><li style=" background-image: url('images/linkedin.png')" class="icon"></li></a>
+                <a href="https://github.com/wezlleyv"><li style=" background-image: url('images/instagram.png')" class="icon"></li></a>
+                <a href="https://github.com/wezlleyv"><li style=" background-image: url('images/gmail-logo.png')" class="icon"></li></a>
+            </ul>
+            <div id="bar"></div>
+        </aside>
+    </main>
+
+</body>
+</html>
