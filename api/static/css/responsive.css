@@ -1,0 +1,35 @@
+@media screen and (max-width: 500px) {
+    header ul a {
+        margin: 0px 0.2rem;
+    }
+
+    #bg {
+        display: none;
+    }
+
+    aside {
+        bottom: -100px;
+        animation-name: Resupper;
+        animation-duration: 2s;
+    }
+
+    main section article {
+        width: auto;
+    }
+
+    main section #content {
+        width: auto;
+        margin-left: 0px;
+    }
+
+    @keyframes Resupper {
+        from {
+            bottom: -150px;
+            opacity: 0;
+        }
+        to {
+            bottom: -100px;
+            opacity: 1;
+        }
+    }
+}

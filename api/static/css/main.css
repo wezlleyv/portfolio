@@ -27,7 +27,7 @@ main section {
 main section #content {
     width: 60%;
     margin-left: 5rem;
-
+    display: grid;
 }
 
 main section article {
@@ -50,7 +50,10 @@ header ul {
 
 header ul li {
     display: inline;
-    margin-right: 10px;
+}
+
+header ul a {
+    margin: 0px 10px;
 }
 
 header nav {
@@ -137,7 +140,9 @@ aside .icon {
     border-style: none;
     border: 0.15rem solid #5000ca;
     border-radius: 0.3rem;
-    margin: 2rem 0rem;
+    margin: 1rem 0rem;
+    text-decoration: none;
+    width: fit-content;
 }
 
 #btn-projetos:hover {
@@ -159,6 +164,19 @@ aside .icon {
     background-image: url("../images/picture_auto_x2.jpg");
 }
 
+ul a {
+    text-decoration: none;
+}
+
 #page {
     cursor: pointer;
+    color: black;
+}
+
+.active {
+    color: #5000ca;
+}
+
+.hovermenu:hover {
+    border-bottom: 1px solid black;
 }

@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/projects.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css')}}">
    <title>Portfolio</title>
 </head>
 <body>
     <header>
         <div class="header-group">
-            <span>Weslley</span>
+            <a style="text-decoration: none;" href="/"><span style="color: #5000ca;">Weslley</span></a>
         </div>
 
         <nav id="menu" class="header-group"></div>
             <ul>
-                <a href="/projects"><li id="page">Projetos</li></a>
-                <a><li>Sobre mim</li></a>
+                <a class="hovermenu" href="/projects"><li id="page">Projetos</li></a>
+                <a class="hovermenu" ><li>Sobre mim</li></a>
             </ul>
         </nav>
     </header>
@@ -26,15 +27,17 @@
         <section style="background-image: url('{{ url_for('static', filename='images/wave.svg') }}');" id="default">
             <article>
                 <div id="content">
-                    <span>Olá, eu sou o</span>
-                    <h1 style="font-size: 2rem;">Weslley Victor.</h1>
-                    <h2 style="margin-left: 3rem;scale: 1; opacity: 0.7; margin-bottom: 1rem;"><span style="color: #5000ca ;">&lt;</span>Back-end Developer<span style="color: #5000ca ;">&frasl;&gt;</span></h2>
-                    <span style="text-align: justify; font-size: .9rem; margin-top: 1rem;">Apaixonado por tecnologia desde pequeno&#128525; me encontrei no back-end por gostar de está por trás de toda criação. Quer <a style="font-size: 0.9rem; text-decoration: none; color: #5000ca; border-bottom: 1px solid #5000ca;" href="about-me">saber mais</a>?</span>
+                    <div>
+                        <span>Olá, eu sou o</span>
+                        <h1 style="font-size: 2rem; color: #5000ca;">Weslley Victor.</h1>
+                        <h2 style="margin-left: 3rem;scale: 1; opacity: 0.7; margin-bottom: 1rem;"><span style="color: #5000ca ;">&lt;</span>Back-end Developer<span style="color: #5000ca ;">&frasl;&gt;</span></h2>
+                        <span style="text-align: justify; font-size: .9rem;">Apaixonado por tecnologia desde pequeno&#128525; me encontrei no back-end por gostar de está por trás de toda criação. Quer <a style="font-size: 0.9rem; text-decoration: none; color: #5000ca; border-bottom: 1px solid #5000ca;" href="about-me">saber mais</a>?</span>
+                    </div>
                     <a href="/projects" id="btn-projetos">Projetos</a>
                 </div>
             </article>
             
-            <article>
+            <article id="bg">
                 <div id="picture"></div>
             </article>
             
@@ -42,9 +45,9 @@
 
         <aside>
             <ul id="reference" style="list-style: none;">
-                <a href="https://github.com/wezlleyv"><li style=" background-image: url('{{ url_for('static', filename='images/github.png') }}')" class="icon"></li></a>
-                <a href="https://github.com/wezlleyv"><li style=" background-image: url('{{ url_for('static',filename='images/linkedin.png') }}')" class="icon"></li></a>
-                <a href="https://github.com/wezlleyv"><li style=" background-image: url('{{ url_for('static', filename='images/instagram.png') }}')" class="icon"></li></a>
+                <a target=”_blank” href="{{url['github']}}"><li style=" background-image: url('{{ url_for('static', filename='images/github.png') }}')" class="icon"></li></a>
+                <a target=”_blank” href="{{url['linkedin']}}"><li style=" background-image: url('{{ url_for('static',filename='images/linkedin.png') }}')" class="icon"></li></a>
+                <a target=”_blank” href="{{url['instagram']}}"><li style=" background-image: url('{{ url_for('static', filename='images/instagram.png') }}')" class="icon"></li></a>
                 <a href="https://github.com/wezlleyv"><li style=" background-image: url('{{ url_for('static', filename='images/gmail-logo.png') }}')" class="icon"></li></a>
             </ul>
             <div id="bar"></div>

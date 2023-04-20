@@ -6,18 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/projects.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/responsive.css')}}">
    <title>Portfolio</title>
 </head>
 <body>
     <header>
         <div class="header-group">
-            <span>Weslley</span>
+            <a href="/" class="hovermenu" style="text-decoration: none; color: black;"><span>Weslley</span></a>
         </div>
 
         <nav id="menu" class="header-group"></div>
             <ul>
-                <a href="/"><li id="page">Inicio</li></a>
-                <a><li>Sobre mim</li></a>
+                <a><li style="color: #5000ca;" id="page">Projetos</li></a>
+                <a class="hovermenu"><li>Sobre mim</li></a>
             </ul>
         </nav>
     </header>
@@ -33,9 +34,9 @@
 
         <aside>
             <ul id="reference" style="list-style: none;">
-                <a href="https://github.com/wezlleyv"><li style=" background-image: url('{{ url_for('static', filename='images/github.png') }}')" class="icon"></li></a>
-                <a href="https://github.com/wezlleyv"><li style=" background-image: url('{{ url_for('static',filename='images/linkedin.png') }}')" class="icon"></li></a>
-                <a href="https://github.com/wezlleyv"><li style=" background-image: url('{{ url_for('static', filename='images/instagram.png') }}')" class="icon"></li></a>
+                <a target=”_blank” href="{{ url['github'] }}"><li style=" background-image: url('{{ url_for('static', filename='images/github.png') }}')" class="icon"></li></a>
+                <a target=”_blank” href="{{ url['linkedin'] }}"><li style=" background-image: url('{{ url_for('static',filename='images/linkedin.png') }}')" class="icon"></li></a>
+                <a target=”_blank” href="{{ url['instagram'] }}"><li style=" background-image: url('{{ url_for('static', filename='images/instagram.png') }}')" class="icon"></li></a>
                 <a href="https://github.com/wezlleyv"><li style=" background-image: url('{{ url_for('static', filename='images/gmail-logo.png') }}')" class="icon"></li></a>
             </ul>
             <div id="bar"></div>
