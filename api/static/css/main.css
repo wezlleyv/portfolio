@@ -1,7 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
-    font-family: 'Open Sans';font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 main {
     position: relative;
     overflow: hidden;
-    height: calc(100vh - 3rem - 19px);
+    height: calc(100vh - 3rem - 18px);
 }
 
 main section {
