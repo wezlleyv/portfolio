@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 URL_LIST = {
     'github': "https://github.com/wezlleyv",
-    'linkedin': "",
+    'linkedin': "https://www.linkedin.com/in/weslleyvictor/",
     'instagram': "https://www.instagram.com/wezlleyvictor/",
 }
 
@@ -16,6 +16,3 @@ def home():
 @app.route("/projects")
 def projects():
     return render_template('projects.html', url=URL_LIST)
-
-if __name__ == "__main__":
-    app.run()
